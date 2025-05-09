@@ -36,13 +36,13 @@
             list-style: none;
             margin: 0 20px;
         }
-        
-        nav ul li a{
+
+        nav ul li a {
             text-decoration: none;
             color: white;
         }
 
-        nav ul li a:hover{
+        nav ul li a:hover {
             color: rgb(143, 143, 231);
             font-size: 1.1rem;
         }
@@ -73,6 +73,20 @@
         .leftsection {
             font-size: 3rem;
         }
+        .leftsection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px 0;
+            background-color: #09093f;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        }
 
         .rightsection img {
             width: 80%;
@@ -82,12 +96,101 @@
         .purple {
             color: rgb(170, 107, 228);
         }
-        #element{
+
+        .Text-gray {
+            color: gray;
+        }
+
+        #element {
             color: rgb(170, 107, 228);
         }
-        .secondsection{
+
+        .secondsection {
             max-width: 80vw;
             margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection hi {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+        }
+
+        .image-top {
+            width: 27px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 140px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 90px;
+            color: gray;
+            width: 140px;
+            font-size: 13px;
+        }
+
+        .third-section {
+            height: 65vh;
+            margin: 0px 50px;
+        }
+
+        .third-section p {
+            margin: 20px 0;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: #0e0e34;
+            height: 185px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 112px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+            color: white;
+
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
         }
     </style>
 </head>
@@ -100,9 +203,8 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/">About</a></li>
-                   <li><a href="/">servides</a></li>
-                   <li><a href="/">projects</a></li>
-                   <li><a href="/">contact Me</a></li>
+                    <li><a href="/">servides</a></li>
+                    <li><a href="/">contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -114,23 +216,139 @@
                 Hi there, I'm <span class="purple">Mohan</span>
                 <div>and Iam an Aspiring </div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">visit GIThub</button>
+                </div>
             </div>
             <div class="rightsection">
                 <img src="bg.png.png" alt="">
             </div>
         </section>
-<hr>
+        <hr>
         <section class="secondsection">
+            <span class="Text-gray"> what I have done so far </span>
             <h1>Past Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        I have started my web development Journey from 2023
+                    </div>
+                    <div class="vertical-desc">
+                        In a seminar,I found my passion for web development and
+                        I started learning HTML, CSS, andjavascript from devtoen.
+                        I have done a few projects and
+                        I am currently working on a few more projects.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="video.png" alt="">
+                    <div class="vertical-title">
+                        I have started my video editing Journey from 2013
+                    </div>
+                    <div class="vertical-desc">
+                        I have started learning video editing from youtube and
+                        I have done a few projects and
+                        I am currently working on a few more projects.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="graphic.png" alt="">
+                    <div class="vertical-title">
+                        I have started my graphic design Journey from 2025
+                    </div>
+                    <div class="vertical-desc">
+                        I have started learning graphic design from youtube and
+                        I have done a few projects and
+                        I am currently working on a few more projects.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="web.png" alt="">
+                    <div class="vertical-title">
+                        I have started my web design Journey from 2025
+                    </div>
+                    <div class="vertical-desc">
+                        I have started learning web design from youtube and
+                        I have done a few projects and
+                        I am currently working on a few more projects.
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="third-section">
+            <h2>ABOUT ME</h2>
+            <p>
+                Hi, I'm K. Mohan, a dedicated and creative Web Developer with a passion for building fast, responsive,
+                and user-friendly websites and web applications. I specialize in turning ideas into clean, functional
+                code using modern technologies like HTML, CSS, JavaScript, React, and Node.js.
+            </p>
+
+            <p> With a strong focus on performance and usability, I enjoy solving problems through thoughtful design and
+                efficient development. Whether it's developing from scratch or optimizing existing code, I strive to
+                deliver seamless digital experiences that make an impact.
+            </p>
+
+            <p> I’m always exploring new tools and frameworks to stay current in this ever-evolving field. When I'm not
+                coding, you’ll find me diving into tech blogs, experimenting with new UI ideas, or enjoying a good
+                coffee break.
+            </p>
+
+            <p> I’m excited to collaborate on innovative projects that challenge my skills and push the boundaries of
+                web development. If you’re looking for a passionate developer to bring your ideas to life, let’s connect
+                and create something awesome together.
+            </p>
+
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Mohan's developer portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">servides</a></li>
+                    <li><a href="/">projects</a></li>
+                    <li><a href="/">contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">servides</a></li>
+                    <li><a href="/">projects</a></li>
+                    <li><a href="/">contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">servides</a></li>
+                    <li><a href="/">projects</a></li>
+                    <li><a href="/">contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            copyright &#169 mohansportfolio.com | All rights reserved
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['web developer.', 'vidoe editor.', '&amp; a graphic designer.'],
-          typeSpeed: 50,
+            strings: ['web developer.', 'vidoe editor.', '&amp; a graphic designer.'],
+            typeSpeed: 50,
         });
-      </script>
+    </script>
 </body>
 
 </html>
